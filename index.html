@@ -5,6 +5,10 @@
         <title>Convertisseur de devises</title>
     </head>
     <body>
+        <!--Zone d'affichage des erreurs-->
+        <div class="errors"></div>
+
+        <!--Zone de sélection des devises à convertir-->
         <div class="question">
             <p>
                 Combien que ça fait-il
@@ -16,14 +20,15 @@
                 en
             </p>
             <div>
-                <select class="" name="">
+                <select class="devises" name="devises">
                     <option value="">Choisir une devise</option>
                 </select> ?
             </div>
         </div>
-        <div class="answer">
 
-        </div>
+        <!--Zone d'affichage de la réponse-->
+        <div class="answer"></div>
+
         <!-- Appel de notre fichier de configuration contenant la clé d'API -->
         <script src="js/config.js" type="text/javascript"></script>
         <!-- Appel du fichier JS contenant la logique -->
